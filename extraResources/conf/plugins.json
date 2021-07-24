@@ -1,0 +1,16 @@
+{
+    "plugins": [        
+        {
+            "name": "math",
+            "path": "plugins/math/math.js"
+        },
+        {
+            "name": "pomodoro",
+            "path": "plugins/pomodoro/pomodoro.js"
+        },
+        {
+            "name": "files",
+            "path": "plugins/files/files.js"
+        }
+    ]
+}

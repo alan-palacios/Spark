@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/Raleway-Regular.ttf');
+}
+
+:root{
+  --bg-color:rgb(45, 44, 48);
+  --secondary-bg-color: rgb(63, 63, 63);
+  --font-color:rgb(221, 221, 221);
+  --highlight-color: rgb(88, 88, 88);
+}
+/* make padding not affect size and set font */
+*{ 
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  user-select: none;      
+  box-sizing: border-box; 
+}
+
+/* center element vertically */
+.v-center{
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* main container */
+.container{
+  width: 100%;
+  background-color: var(--bg-color);
+  border-radius: 7px;   
+  padding: 7px;  
+}
+
+/* Search bar container */
+.search-bar{    
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+
+/* draggable element to move window */
+.drag {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;  
+  color: var(--secondary-bg-color);
+  font-size: 24px;  
+}
+
+/* input */
+.search-input{
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-bg-color);
+  padding-left: 5px;
+  margin-left: 5px;
+  border-radius: 7px;     
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  color: rgb(221, 221, 221);
+}
+
+#items{
+  color: var(--font-color);  
+}
+
+.item{  
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  padding: 4px;  
+  /* background-color: blueviolet; */
+}
+.item-hover{
+  background-color: var(--highlight-color);
+  border-radius: 4px;  
+}
+
+.item-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38px;  
+  /* background-color: chartreuse; */
+}
+.image-container{  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.item-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+.description{
+  width: 100%;
+  height: 100%;  
+  margin-left: 5px;  
+}
+
+.item-path{
+  margin-left: 3px;
+}
+hr{
+  height: 2px;
+  background-color: var(--secondary-bg-color);
+  border: none;  
+  margin-bottom: 0;
+}
